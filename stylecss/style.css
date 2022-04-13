@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+img,
+svg {
+  vertical-align: middle;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1320px; /*para que no crezca indefinidamente la caja*/
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.col {
+  width: 100%;
+}
+
+/*HEADER*/
+header {
+  background-color: #f0f1f0;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 0 10px 0 rgba(107, 107, 107, 0.76);
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.nav__item {
+  margin: 0 0 0 1.5rem;
+}
+.nav__link {
+  color: darkslategrey;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav__link:hover,
+.nav__link:focus,
+.button-footer:hover,
+.button-footer:focus {
+  opacity: 0.65;
+}
+
+/*BOTONES*/
+#loginbutton,
+#button-footer,
+.btn-contacto,
+.btn-tienda,
+.btn-cursos,
+.btn-login {
+  background-color: #9d0208;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn-tienda,
+.btn-cursos {
+  padding: 0.5rem;
+}
+.btn-contacto {
+  padding: 1rem;
+}
+.btn-login {
+  background-color: black;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #f0f1f0;
+  padding: 0.5rem 0;
+  display: block;
+  text-align: center;
+}
+.row--footer {
+  display: flex;
+  margin: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.col--footer {
+  margin: 0rem 8rem 0rem 8rem;
+}
+
+/*BODY*/
+body {
+  font-family: "Monserrat", sans-serif;
+}
+/*INDEX*/
+#inicio1 {
+  background-color: white;
+  padding: 5rem 0 0 0;
+}
+.intro-1 {
+  text-transform: capitalize;
+  text-align: left;
+  font-size: 5rem;
+  font-weight: 400;
+}
+.intro-1--title {
+  font-weight: lighter;
+  display: inline-block;
+  text-decoration-color: #9d0208;
+}
+.intro-1--description {
+  font-size: 1.4rem;
+  margin-top: 1.2rem;
+  display: inline-block;
+}
+.img-box {
+  margin-right: 0;
+  text-align: right;
+  z-index: -1;
+}
+#colorsection {
+  padding: 0 0 5rem 0;
+  margin-top: 0%;
+  background-color: #9d0208;
+}
+/*GRID INDEX*/
+.container-grid-padre {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  column-gap: 2rem;
+  grid-template-rows: auto;
+  grid-template-areas: "seminario ferias mayor";
+  justify-items: center;
+  grid-auto-rows: minmax(150px auto);
+  justify-content: space-evenly;
+}
+.seminario {
+  grid-area: seminario;
+}
+.ferias {
+  grid-area: ferias;
+}
+.mayor {
+  grid-area: mayor;
+}
+.card,
+.cardTienda {
+  margin: 1rem;
+  max-width: 400px;
+  padding: 2rem;
+  border: groove 0.5px black;
+  box-shadow: 0 10px 30px -10px rgb(255, 255, 255);
+  background-color: white;
+}
+/* .container--card {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1320px; /*para que no crezca indefinidamente la caja*/
+/* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.col1 {
+  order: 1;
+  align-self: flex-start;
+  flex: 1 1 1rem;
+}
+.col2 {
+  order: 2;
+  align-self: center;
+}
+.col3 {
+  order: 3;
+  align-self: flex-end;
+} */
+
+/*TITULO DE SECCIONES*/
+.section-title {
+  width: 90%;
+  margin: 0 auto;
+  font-weight: lighter;
+}
+/*NOSOTROS*/
+#nosotros-fondo {
+  background-image: url("../imagenes/fondos/oriental.png");
+}
+/*GRID NOSOTROS*/ /*--> No pude llevar el h2 y el p de la tercera fila contra el lado derecho de la pantalla*/
+.container-grid-padre-nos {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "gd gd ."
+    ". img ."
+    ". vf vf";
+  justify-items: center;
+}
+.grid-hijo-gd {
+  grid-area: gd;
+}
+.grid-hijo-img {
+  grid-area: img;
+}
+.grid-hijo-vf {
+  grid-area: vf;
+}
+/* #nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.col-1-GD {
+  order: 1;
+  align-self: flex-start;
+  flex: 1 1 200px;
+  padding: 2rem;
+  text-align: left;
+}
+.col-2-FP {
+  order: 2;
+  align-self: center;
+  flex: 1 1 200px;
+  padding: 2rem;
+  text-align: center;
+}
+.col-3-VF {
+  order: 3;
+  align-self: flex-end;
+  flex: 1 1 200px;
+  padding: 2rem;
+  text-align: right;
+}*/
+.foto-vf {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.nosotros-title {
+  font-weight: bold;
+  display: inline-block;
+}
+.nosotros-title--vf {
+  padding-right: 0;
+}
+.nosotros-description {
+  font-size: 1.4rem;
+  margin-top: 1.2rem;
+  display: inline-block;
+}
+/*TIENDA*/
+#fondoTienda {
+  background-image: url("../imagenes/fondos/dark-grey-terrazzo.png");
+}
+
+/*CURSOS*/
+#cursos-fondo {
+  background-image: url("../imagenes/fondos/light-grey-terrazzo.png");
+}
+#cursos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  margin: 5rem 0 5rem 0;
+  text-align: center;
+  width: auto;
+}
+tr,
+td {
+  width: 12rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 0.2rem;
+  font-weight: normal;
+}
+.days {
+  background-color: #dc2f02;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+.form-cursos {
+  padding: 1rem;
+  margin: auto;
+}
+fieldset {
+  padding: 1rem;
+}
+legend,
+.lbl {
+  width: 5rem;
+  padding: 0 1rem 1rem 0;
+  text-align: left;
+  margin: 0.2rem;
+  display: inline-block;
+}
+.lbl-dudas {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+#nombre,
+#apellido,
+#dia,
+#turno {
+  width: 20rem;
+  padding: 0.6rem;
+  text-align: left;
+  display: inline-block;
+}
+.btn-registro {
+  display: inline-block;
+  align-items: center;
+  padding-left: 17rem;
+}
+/*CONTACTO*/
+#contacto-fondo {
+  background-image: url("../imagenes/fondos/email-pattern.png");
+}
+#contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-contacto {
+  order: 1;
+  align-items: left;
+  padding: 5rem 1rem 5rem 0;
+}
+.info-contacto,
+.redes-sociales {
+  order: 2;
+  align-items: baseline;
+  padding: 5rem 0 5rem 5rem;
+  font-size: large;
+  text-align: right;
+}
+#nombre,
+#telefono,
+#email,
+#mensaje {
+  width: 25rem;
+  padding: 0.8rem;
+  text-align: left;
+  display: inline-block;
+}
+.lbl-contacto {
+  display: inline-block;
+  padding: 1rem 1rem 1rem 0;
+  font-size: large;
+  color: black;
+}
+iframe {
+  display: inline-block;
+  text-align: center;
+}
+/*LOGIN*/
+#login-fondo {
+  background: url("../imagenes/fondos/fondologin.jpg") no-repeat center top;
+  background-size: cover;
+}
+.login-box {
+  width: 24rem;
+  background-color: #9d0208;
+}
+#login-padre {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#formulario {
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  flex: 1 1 200px;
+  text-align: left;
+  padding: 5rem 1rem 5rem 1rem;
+}
+.lbl-login {
+  display: inline-block;
+  padding: 1rem 1rem 1rem 0;
+  font-size: x-large;
+}
+#usuario,
+#contrasena {
+  width: 22rem;
+  padding: 0.8rem;
+  text-align: left;
+  display: inline-block;
+}
+.mover-btn {
+  display: inline-block;
+  align-items: center;
+  padding-left: 14rem;
+  padding-top: 1rem;
+}
+.enlace-login {
+  display: inline-block;
+  color: white;
+  padding-top: 0.8rem;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  .nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
+  }
+  .nav__list {
+    display: flex;
+    margin: 0;
+  }
+  .nav__item {
+    margin: 0 0 0 1.5rem;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img-box {
+    margin-top: 0;
+    text-align: right;
+  }
+  .intro-1 {
+    font-size: 3.4rem;
+  }
+  .intro-1--description {
+    font-size: 1rem;
+    display: inline-block;
+  }
+}

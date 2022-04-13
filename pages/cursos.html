@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="../imagenes/lotus.png"
+      type="image/x-icon"
+    />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/74d732c080.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="../stylecss/style.css" />
+    <title>GlassdecoVF</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="container">
+        <div class="row">
+          <!--Logo-->
+          <a href="../index.html">
+            <img
+              src="../imagenes/logo-gd.png"
+              alt="Logo"
+              width="170px"
+              height="60px"
+            />
+          </a>
+          <!--Menu-->
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="tienda.html">Tienda</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="cursos.html">Cursos</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav__item">
+                <a id="loginbutton" class="nav__link" href="login.html"
+                  >Log In</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <br />
+    <!--MAIN-->
+    <main>
+      <h2 class="section-title">Cursos y Seminarios</h2>
+      <hr />
+      <section id="cursos-fondo">
+        <div class="container" id="cursos">
+          <div class="row">
+            <table border="1" cellpadding="10" cellspacing="5">
+              <tr class="days">
+                <!--Dias de la semana-->
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miércoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+                <td>Sábado</td>
+              </tr>
+              <tr>
+                <!--Primer horario-->
+                <td>9:00hs: Vitrofusion</td>
+                <td></td>
+                <td>9:00hs: Vitrofusion</td>
+                <td></td>
+                <td>9:00hs: Vitrofusion</td>
+                <td></td>
+              </tr>
+              <tr>
+                <!--Segundo horario-->
+                <td></td>
+                <td>11:00hs: Vitrofusion</td>
+                <td></td>
+                <td>11:00hs: Vitrofusion</td>
+                <td></td>
+                <td>Seminario de 9:00 a 12:00</td>
+              </tr>
+              <tr>
+                <!--Tercer horario-->
+                <td>15:00hs: Vitrofusion</td>
+                <td></td>
+                <td>15:00hs: Vitrofusion</td>
+                <td></td>
+                <td>15:00hs: Vitrofusion</td>
+                <td></td>
+              </tr>
+              <tr>
+                <!--Cuarto horario-->
+                <td></td>
+                <td>18:00hs: Vitrofusion</td>
+                <td></td>
+                <td>18:00hs: Vitrofusion</td>
+                <td></td>
+                <td>Seminario de 15:00 a 19:00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="container" id="cursos">
+          <div class="row">
+            <form action="" class="form-cursos">
+              <fieldset>
+                <legend>Registro</legend>
+                <label class="lbl" for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" />
+                <br />
+                <label class="lbl" for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" />
+                <br />
+                <label class="lbl">Día:</label>
+                <select name="dia" id="dia">
+                  <option value="Lunes">Lunes</option>
+                  <option value="Martes">Martes</option>
+                  <option value="Miercoles">Miércoles</option>
+                  <option value="Jueves">Jueves</option>
+                  <option value="Viernes">Viernes</option>
+                  <option value="Sabado">Sabado</option>
+                </select>
+                <label class="lbl">Turno:</label>
+                <select name="turno" id="turno">
+                  <option value="Mañana">Mañana</option>
+                  <option value="Tarde">Tarde</option>
+                </select>
+                <br />
+                <div class="btn-registro item9">
+                  <input class="btn-cursos" type="submit" value="Registrar" />
+                  <input
+                    class="btn-cursos"
+                    type="reset"
+                    value="Borrar registro"
+                  />
+                </div>
+                <br />
+                <label class="lbl-dudas" for="contacto"
+                  >Dudas y consultas haga click en el siguiente enlace:</label
+                >
+                <a href="contacto.html#formulario" target="_blank"
+                  >Contactanos</a
+                >
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Pie de página-->
+    <footer>
+      <div class="container">
+        <div class="row--footer">
+          <div class="col--footer">
+            <i class="fa-solid fa-circle-user">Usuario</i>
+          </div>
+          <div class="col">
+            <span>Glassdeco - VF</span>
+            <h6>Córdoba - Argentina</h6>
+          </div>
+          <div class="col">
+            <input
+              id="button-footer"
+              class="button-footer"
+              type="button"
+              value="Log Out"
+            />
+            <input
+              id="button-footer"
+              class="button-footer"
+              type="button"
+              value="Carrito"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

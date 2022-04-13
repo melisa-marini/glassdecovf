@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="../imagenes/lotus.png"
+      type="image/x-icon"
+    />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/74d732c080.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="../stylecss/style.css" />
+    <title>GlassdecoVF</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="container">
+        <div class="row">
+          <!--Logo-->
+          <a href="../index.html">
+            <img src="../imagenes/logo-gd.png" alt="Logo" width="170px" height="60px">
+          </a>
+          <!--Menu-->
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="tienda.html">Tienda</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="cursos.html">Cursos</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav__item">
+                <a id="loginbutton" class="nav__link" href="login.html"
+                  >Log In</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <br>
+    <!--MAIN-->
+    <main>
+      <h2 class="section-title">Contactanos</h2>
+      <hr>
+      <!--Formulario de Consulta-->
+      <section id="contacto-fondo">
+        <div class="container" id="contacto">
+          <div class="row"></div>
+            <div class="form-contacto">
+              <form action="" id="formulario">
+                <label class="lbl-contacto" for="nombre">Nombre</label>
+                <br />
+                <input type="text" name="nombre" id="nombre" />
+                <br />
+                <label class="lbl-contacto">Correo</label>
+                <br />
+                <input type="email" name="email" id="email" />
+                <br />
+                <label class="lbl-contacto">Teléfono</label>
+                <br />
+                <input type="text" name="telefono" id="telefono" />
+                <br />
+                <label class="lbl-contacto" for="mensaje">Mensaje</label>
+                <br />
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <br />
+                <input class="btn-contacto" type="submit" value="Enviar" />
+                <input class="btn-contacto" type="reset" value="Borrar formulario" />
+              </form>
+            </div>
+            <!--Datos de contacto-->
+            <div class="info-contacto">
+              <p>
+                <img
+                  src="../imagenes/iconos/location.png"
+                  alt="location-icon"
+                />
+                Calle Paysandu 1964, Córdoba, Argentina.
+              </p>
+              <br>
+              <p>
+                <img src="../imagenes/iconos/arroba2.png" alt="arroba-icon" />
+                glassdecovf@gmail.com.ar
+              </p>
+              <br>
+              <p>
+                <img src="../imagenes/iconos/phone.png" alt="phone-icon" />
+                (+54)-0351-15xxxxxxx
+              </p>
+              <br>
+              <!--Enlace a redes sociales-->
+              <a href="https://www.facebook.com/search/top?q=glass%20deco"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/?hl=es"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.whatsapp.com/?lang=es"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <br>
+              <!--Mapa-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30800.420229317922!2d-64.20781847026306!3d-31.40502538908703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902eb0b2faf%3A0x4382bb478dc6e982!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1649080705208!5m2!1ses!2sar" 
+              width="900" height="300" style="border:0;" allowfullscreen="" 
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Pie de página-->
+    <footer>
+      <div class="container">
+        <div class="row--footer">
+          <div class="col--footer">
+            <i class="fa-solid fa-circle-user">Usuario</i>
+          </div>
+          <div class="col">
+            <span>Glassdeco - VF</span>
+            <h6>Córdoba - Argentina</h6>
+          </div>
+          <div class="col">
+            <input
+              id="button-footer"
+              class="button-footer"
+              type="button"
+              value="Log Out"
+            />
+            <input
+              id="button-footer"
+              class="button-footer"
+              type="button"
+              value="Carrito"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

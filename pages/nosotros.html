@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="../imagenes/lotus.png"
+      type="image/x-icon"
+    />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/74d732c080.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="../stylecss/style.css" />
+    <title>GlassdecoVF</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="container">
+        <div class="row">
+          <!--Logo-->
+          <a href="../index.html">
+            <img
+              src="../imagenes/logo-gd.png"
+              alt="Logo"
+              width="170px"
+              height="60px"
+            />
+          </a>
+          <!--Menu-->
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="tienda.html">Tienda</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="cursos.html">Cursos</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav__item">
+                <a id="loginbutton" class="nav__link" href="login.html"
+                  >Log In</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <br />
+    <!--MAIN-->
+    <main>
+      <h2 class="section-title">Sobre Nosotros</h2>
+      <hr />
+      <section id="nosotros-fondo">
+        <div class="container container-grid-padre-nos" id="nosotros">
+          <div class="row grid-hijo-gd">
+            <div class="col-1-GD">
+              <h2 class="nosotros-title">Glassdeco</h2>
+              <p class="nosotros-description">
+                Resumen sobre qué es glassdeco y su fin. Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Cumque dignissimos veritatis
+                quae eligendi aperiam, illum quia expedita facilis dolorum
+                corporis sit voluptatem aliquam amet? Adipisci.
+              </p>
+            </div>
+          </div>
+          <div class="row grid-hijo-img">
+            <div class="col-2-FP">
+              <img
+                class="foto-vf"
+                src="../imagenes/mujer.png"
+                alt="FotoAutora-VF"
+              />
+            </div>
+          </div>
+          <div class="row grid-hijo-vf">
+            <div class="col-3-VF">
+              <h2 class="nosotros-title--vf">VF</h2>
+              <p class="nosotros-description">
+                Pequeña biografia de quien es la autora. Lorem ipsum dolor sit
+                amet, consectetur adipisicing elit. Cumque dignissimos veritatis
+                quae eligendi aperiam, illum quia expedita facilis dolorum
+                corporis sit voluptatem aliquam amet? Adipisci.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Pie de página-->
+    <footer>
+      <div class="container">
+        <div class="row--footer">
+          <div class="col--footer">
+            <i class="fa-solid fa-circle-user">Usuario</i>
+          </div>
+          <div class="col">
+            <span>Glassdeco - VF</span>
+            <h6>Córdoba - Argentina</h6>
+          </div>
+          <div class="col">
+            <input
+              id="button-footer"
+              class="button-footer"
+              type="button"
+              value="Log Out"
+            />
+            <input
+              id="button-footer"
+              class="button-footer"
+              type="button"
+              value="Carrito"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

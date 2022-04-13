@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="../imagenes/lotus.png"
+      type="image/x-icon"
+    />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/74d732c080.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="../stylecss/style.css" />
+    <title>GlassdecoVF</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="container">
+        <div class="row">
+          <!--Logo-->
+          <a href="../index.html">
+            <img
+              src="../imagenes/logo-gd.png"
+              alt="Logo"
+              width="170px"
+              height="60px"
+            />
+          </a>
+          <!--Menu-->
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="tienda.html">Tienda</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="cursos.html">Cursos</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav__item">
+                <a id="loginbutton" class="nav__link" href="login.html"
+                  >Log In</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <br />
+    <!--MAIN-->
+    <main>
+      <h2 class="section-title">Ingresa a tu Perfil</h2>
+      <hr />
+      <section id="login-fondo">
+        <div class="container" id="login-padre">
+          <div class="row">
+            <div class="login-box">
+              <form action="" id="formulario">
+                <label class="lbl-login" for="usuario">Usuario</label>
+                <br />
+                <input
+                  type="email"
+                  name="usuario"
+                  id="usuario"
+                  placeholder="Ingrese su usuario"
+                />
+                <br />
+                <label class="lbl-login" for="contrasena">Contraseña</label>
+                <br />
+                <input
+                  type="password"
+                  name="contrasena"
+                  id="contrasena"
+                  placeholder="Ingrese su contraseña"
+                />
+                <br />
+                <div class="mover-btn">
+                  <input class="btn-login" type="submit" value="Ingresar" />
+                </div>
+                <br />
+                <a class="enlace-login" href="">¿Ha olvidado su contraseña?</a>
+                <br />
+                <a class="enlace-login" href="">¿No tiene una cuenta?</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Pie de página-->
+    <footer>
+      <div class="container">
+        <div class="row--footer">
+          <div class="col--footer">
+            <i class="fa-solid fa-circle-user">Usuario</i>
+          </div>
+          <div class="col">
+            <span>Glassdeco - VF</span>
+            <h6>Córdoba - Argentina</h6>
+          </div>
+          <div class="col">
+            <input
+              id="button-footer"
+              class="button-footer"
+              type="button"
+              value="Log Out"
+            />
+            <input
+              id="button-footer"
+              class="button-footer"
+              type="button"
+              value="Carrito"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
